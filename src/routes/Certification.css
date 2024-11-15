@@ -1,0 +1,58 @@
+/* Certifications.css */
+
+#certifications {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-image: url("../assets/paralax3.jpg"); /* Use same background as Skills page */
+  background-attachment: fixed; /* Enables the parallax effect */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #f5f5f5;
+}
+
+.certifications-container {
+  width: 80%;
+  max-width: 1000px;
+  background: rgba(30, 30, 30, 0.85); /* Dark overlay similar to Skills page */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.certification-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.certification-card {
+  background: #2c2c2c;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.certification-card:hover {
+  transform: translateY(-5px);
+}
+
+.certification-card h3 {
+  color: #ff9800;
+  font-size: 1.5rem;
+}
+
+.certification-card p {
+  color: #d3d3d3;
+  font-size: 1rem;
+}

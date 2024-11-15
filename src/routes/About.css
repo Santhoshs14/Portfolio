@@ -1,0 +1,107 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-attachment: fixed; /* Enables the parallax effect */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: fadeIn 1s ease-in;
+  color: #333;
+}
+/* src/components/About.css */
+
+.about-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: #f5f5f5;
+  font-family: "Inter", sans-serif;
+}
+
+.about-content {
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  animation: fadeIn 1s ease forwards;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.about-subtitle {
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem;
+  color: #1da1f2;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.skill-item {
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill-item:hover {
+  background: #1da1f2;
+  transform: scale(1.1);
+  color: #fff;
+}
+
+.resume-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #1da1f2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #0d83cc;
+  transform: translateY(-3px);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,45 @@
+/* Home.css */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-attachment: fixed; /* Enables the parallax effect */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: fadeIn 1s ease-in;
+  color: #d3d3d3;
+}
+
+.get-started {
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #d3d3d3;
+  background-color: transparent;
+  border: 2px solid #d3d3d3;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.get-started.text {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.get-started:hover {
+  background-color: transparent;
+  border-color: #000000;
+}
+.get-started:hover .text {
+  color: #000000;
+}

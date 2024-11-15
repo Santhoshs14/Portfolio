@@ -1,0 +1,77 @@
+/* Skills.css */
+#skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: none;
+  background-image: url("../assets/paralax3.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.skills-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.skill-card {
+  background: linear-gradient(
+    135deg,
+    rgba(30, 30, 30, 0.85),
+    rgba(51, 51, 51, 0.85)
+  );
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  padding: 3rem;
+  width: 450px;
+  height: 65vh;
+  border-radius: 15px;
+  text-align: center;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.skill-card h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #f5f5f5;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-card li {
+  font-size: 1.2rem;
+  color: #d0d0d0;
+  margin: 0.5rem 0;
+}
+
+.arrow-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 0.3s;
+}
+
+.arrow-button:hover {
+  color: #ff9800;
+}
+
+.left-arrow {
+  left: -3rem;
+}
+
+.right-arrow {
+  right: -3rem;
+}

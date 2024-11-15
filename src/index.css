@@ -1,0 +1,57 @@
+/* index.css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #f2f2f2;
+  color: #d3d3d3;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #d3d3d3;
+}
+
+/* Home.css */
+
+/* #home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background: #e6e6e6;
+  animation: fadeIn 1s ease-in;
+}
+
+.get-started {
+  padding: 0.7rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.get-started:hover {
+  background: #333;
+  transform: scale(1.05);
+} */

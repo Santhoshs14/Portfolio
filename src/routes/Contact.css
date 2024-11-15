@@ -1,0 +1,120 @@
+/* Contact.css */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-attachment: fixed; /* Enables the parallax effect */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: fadeIn 1s ease-in;
+  color: #fff;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.contact-form-container {
+  display: flex;
+  background: linear-gradient(
+    135deg,
+    rgba(30, 30, 30, 0.85),
+    rgba(51, 51, 51, 0.85)
+  ); /* Dark gradient */
+  width: 80%;
+  max-width: 1000px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.contact-form {
+  width: 66%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #fff; /* White text color */
+  animation: fadeInUp 1s ease forwards;
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #f5f5f5;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #d0d0d0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #555;
+  outline: none;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.3s ease;
+}
+
+.form__field:focus {
+  border-color: #ff9800;
+}
+
+.contact-form button {
+  padding: 0.75rem;
+  background: none;
+  color: #fff;
+  border: 2px solid #ff9800;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #ff9800;
+  color: #333;
+}
+
+.contact-image {
+  width: 34%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(30, 30, 30, 0.85);
+}
+
+.contact-image img {
+  width: 100%;
+  background-size: cover;
+  border-radius: 0 8px 8px 0;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
