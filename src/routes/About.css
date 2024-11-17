@@ -10,9 +10,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   animation: fadeIn 1s ease-in;
-  color: #222;
+  color: #333;
 }
-/* src/components/About.css */
 
 .about-section {
   position: relative;
